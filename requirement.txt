@@ -1,0 +1,6 @@
+trafilatura == 2.0.0
+pandas == 2.3.3
+dotenv == 0.9.9
+requests == 2.32.5
+bs4==0.0.2
+aiohttp==3.13.3

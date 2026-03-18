@@ -1,0 +1,31 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ragpkg"
+version = "0.1.0"
+description = "Stripe Enterprise RAG project pkg "
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Vishal Raut" }]
+dependencies = [
+    "trafilatura == 2.0.0",
+    "pandas == 2.3.3",
+    "dotenv == 0.9.9",
+    "requests == 2.32.5",
+    "bs4==0.0.2",
+    "aiohttp==3.13.3"
+  # add more runtime deps here
+]
+
+
+[project.scripts]
+run-pipeline = "ragpkg.pipeline.run:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
