@@ -12,13 +12,13 @@
 
 from aiohttp import ClientSession, ClientTimeout,TCPConnector
 import asyncio
-# from extract import text_extract
-from ragpkg.pipeline.extract import text_extract
+from ragpkg.extraction.extract import text_extract
+from config.settings import settings
 
 async def main():
 
-    CONCURRENCY = 12
-    TIMEOUT = 25
+    CONCURRENCY = settings.CONCURRENCY
+    TIMEOUT = settings.CONNECT_TIMEOUT_SEC
     url_link = "https://stripe.com/in/guides/payment-methods-guide"
 
     DEFAULT_TIMEOUT =  ClientTimeout(
