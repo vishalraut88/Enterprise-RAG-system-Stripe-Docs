@@ -1,5 +1,15 @@
-Ref_file.py
+# Environments
 .env
+.venv
+.venv*
+env/
+venv/
+env.bak/
+venv.bak/
+
+Ref_file.py
 ragpkg.egg-info
 __pycache__
-RAG Experiments.ipynb
+# Jupyter Notebook
+.ipynb_checkpoints
+# Temporary directories

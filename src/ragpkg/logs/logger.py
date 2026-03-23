@@ -1,7 +1,6 @@
 import logging
 import sys
-from config.settings import settings
-
+from ragpkg.config.settings import settings
 
 
 LOG_LEVEL = settings.LOG_LEVEL.upper()

@@ -13,7 +13,9 @@
 from aiohttp import ClientSession, ClientTimeout,TCPConnector
 import asyncio
 from ragpkg.extraction.extract import text_extract
-from config.settings import settings
+from ragpkg.config.settings import settings
+
+
 
 async def main():
 
@@ -42,6 +44,8 @@ async def main():
         extr = text_extract(url_link)
         async with sem:
             print(extr.process_url())
+
+    return 
 
 
 if __name__ == "__main__":
